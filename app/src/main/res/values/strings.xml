@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">raymond86</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="speed_sensitivity">Speed Sensitivity</string>
+    <string name="orientation_sensitivity">Orientation Sensitivity</string>
+</resources>

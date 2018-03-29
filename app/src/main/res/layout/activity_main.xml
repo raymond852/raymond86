@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.raymond86.MainActivity"
+    android:background="@color/colorPrimaryDark"
+    android:clipChildren="false">
+
+    <com.rilixtech.materialfancybutton.MaterialFancyButton
+        android:id="@+id/control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text=""
+        app:mfb_textColor="@android:color/white"
+        app:mfb_defaultColor="@color/colorPrimaryDark"
+        app:mfb_fontIconSize = "40dp"
+        app:mfb_icon="@string/enti_game_controller"/>
+
+    <TextView
+        android:id="@+id/connect_status"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+
+    <com.jmedeisis.bugstick.Joystick
+        android:id="@+id/joystick"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_base"
+        app:force_square="true"
+        app:radius="125dp">
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_stick" />
+
+    </com.jmedeisis.bugstick.Joystick>
+
+
+
+
+</RelativeLayout>
