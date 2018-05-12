@@ -19,18 +19,24 @@ android {
     }
 }
 
+configurations.compile {
+    resolutionStrategy {
+        force 'groupId:artifactId:desiredVersion'
+    }
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:27.1.0'
+    compile 'com.android.support:appcompat-v7:27.1.1'
     testCompile 'junit:junit:4.12'
 
     compile 'com.rilixtech:materialfancybuttons:1.8.7'
     compile 'com.rilixtech:entypo-typeface:1.0.0.3'
     compile 'com.xw.repo:bubbleseekbar:3.8-lite'
-    compile 'com.afollestad.material-dialogs:core:0.9.4.7'
+    compile 'com.afollestad.material-dialogs:core:0.9.6.0'
 
     compile project(':bugstick')
 }
